@@ -299,3 +299,30 @@ body {
         page-break-after: avoid;
     }
 }
+
+@-webkit-keyframes disc {
+  from {
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: center center;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -webkit-transform-origin: center center;
+  }
+}
+
+@keyframes disc {
+  from {
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+}
+
+.disc {
+	-webkit-animation: disc 50s infinite linear;
+  -ms-animation: disc 50s infinite linear;
+}
